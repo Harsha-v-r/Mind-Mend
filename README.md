@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+Mind Mend App
 
-## Project info
+A modern, responsive mental-health companion built using Vite, React, TypeScript, Tailwind CSS, and shadcn-ui.
+This project supports features like mood tracking, journaling, AI-powered suggestions, and Supabase-based authentication + database.
 
-**URL**: https://lovable.dev/projects/289bcb6d-4800-417b-a12c-6836d166a721
+🚀 Getting Started (Local Development)
+Requirements
 
-## How can I edit this code?
+Node.js (LTS recommended)
 
-There are several ways of editing your application.
+npm or pnpm or yarn
 
-**Use Lovable**
+Git
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/289bcb6d-4800-417b-a12c-6836d166a721) and start prompting.
+Steps
+# 1. Clone the repository
+git clone https://github.com/Harsha-v-r/Mind-Mend-App.git
 
-Changes made via Lovable will be committed automatically to this repo.
+# 2. Go into the project directory
+cd Mind-Mend-App
 
-**Use your preferred IDE**
+# 3. Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Your project will start on a local development server (e.g., http://localhost:5173/ depending on Vite settings).
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+🛠️ Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Vite – Fast build & dev server
 
-## How can I deploy this project?
+React – Frontend UI
 
-Simply open [Lovable](https://lovable.dev/projects/289bcb6d-4800-417b-a12c-6836d166a721) and click on Share -> Publish.
+TypeScript – Type-safe development
 
-## Can I connect a custom domain to my Lovable project?
+Tailwind CSS – Utility-first styling
 
-Yes, you can!
+shadcn-ui – Modern UI components
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Supabase – Authentication, database, edge functions
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+AI Integration – Gemini / LLM-powered emotional support suggestions
+
+🌐 Deployment Guide
+
+You can deploy this project using Vercel, Netlify, or any hosting service that supports Vite builds.
+
+Deploy on Vercel
+
+Go to https://vercel.com
+
+Import your GitHub repo
+
+Add all required environment variables:
+
+VITE_SUPABASE_URL
+
+VITE_SUPABASE_PUBLISHABLE_KEY
+
+SUPABASE_SERVICE_ROLE_KEY
+
+GEMINI_API_KEY
+
+(any others used by your project)
+
+Build command:
+
+npm run build
+
+
+Output directory:
+
+dist
+
+
+Deploy
+
+🔑 Environment Variables
+
+Create a .env.local file in the project root:
+
+VITE_SUPABASE_URL="https://your-project.supabase.co"
+VITE_SUPABASE_PUBLISHABLE_KEY="your_anon_key"
+SUPABASE_SERVICE_ROLE_KEY="your_service_role_key"
+GEMINI_API_KEY="your_gemini_key"
+
+
+⚠️ Never commit .env.local to GitHub.
+
+📂 Editing the Project
+
+You can modify the app in any of the following ways:
+
+✔ Using VS Code (recommended)
+
+Clone the repo
+
+Edit files
+
+Commit & push changes
+
+Vercel auto-deploys (if connected)
+
+✔ Editing directly on GitHub
+
+Open any file
+
+Click the ✏️ "Edit" icon
+
+Commit changes directly in the browser
+
+✔ GitHub Codespaces
+
+If you want to use a cloud-based VS Code environment:
+
+Open the repo on GitHub
+
+Click Code → Codespaces → Create New Codespace
+
+Edit and commit normally
+
+📡 Backend (Supabase)
+
+This project uses:
+
+Supabase Auth
+
+Supabase Database (Postgres)
+
+Supabase Edge Functions (TypeScript)
+
+Make sure your tables, SQL schema, and edge functions are deployed correctly.
+
+📝 License
+
+This project is owned by Harsha-v-r.
+Feel free to fork, improve, or contribute if allowed.
