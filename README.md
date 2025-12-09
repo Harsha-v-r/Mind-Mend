@@ -1,142 +1,147 @@
-Mind Mend App
+ #Mind Mend App
 
-A modern, responsive mental-health companion built using Vite, React, TypeScript, Tailwind CSS, and shadcn-ui.
-This project supports features like mood tracking, journaling, AI-powered suggestions, and Supabase-based authentication + database.
+A modern mental-wellness companion built with React, TypeScript, Vite, Tailwind CSS, shadcn-ui, Supabase, and AI-powered mood analysis. [web:59][web:55]
 
-🚀 Getting Started (Local Development)
-Requirements
+---
 
-Node.js (LTS recommended)
+## 🧠 Overview
 
-npm or pnpm or yarn
+Mind Mend helps users track their mood, journal their thoughts, and receive AI-generated insights to better understand their emotional patterns. [web:30]  
+The app uses Supabase for authentication, data storage, and edge functions, combined with Gemini for AI-driven mood analysis. [web:59][web:60]
 
-Git
+---
 
-Steps
-# 1. Clone the repository
+## 🛠 Tech Stack
+
+- Vite  
+- React + TypeScript  
+- Tailwind CSS  
+- shadcn-ui  
+- Supabase (Auth, Database, Edge Functions)  
+- Gemini / AI Integration [web:55][web:59][web:60]
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
 git clone https://github.com/Harsha-v-r/Mind-Mend-App.git
-
-# 2. Go into the project directory
 cd Mind-Mend-App
 
-# 3. Install dependencies
+text
+
+### 2. Install dependencies
+
 npm install
 
-# 4. Start the development server
+text
+
+### 3. Start the development server
+
 npm run dev
 
+text
 
-Your project will start on a local development server (e.g., http://localhost:5173/ depending on Vite settings).
+---
 
-🛠️ Technologies Used
+## 🔑 Environment Variables
 
-This project is built with:
+Create a `.env.local` file in the project root and add:
 
-Vite – Fast build & dev server
+VITE_SUPABASE_URL=""
+VITE_SUPABASE_PUBLISHABLE_KEY=""
+SUPABASE_SERVICE_ROLE_KEY=""
+GEMINI_API_KEY=""
 
-React – Frontend UI
+text
 
-TypeScript – Type-safe development
+> ⚠️ Do **NOT** commit `.env.local` to GitHub. [web:59]
 
-Tailwind CSS – Utility-first styling
+---
 
-shadcn-ui – Modern UI components
+## 🌐 Deployment (Vercel)
 
-Supabase – Authentication, database, edge functions
-
-AI Integration – Gemini / LLM-powered emotional support suggestions
-
-🌐 Deployment Guide
-
-You can deploy this project using Vercel, Netlify, or any hosting service that supports Vite builds.
-
-Deploy on Vercel
-
-Go to https://vercel.com
-
-Import your GitHub repo
-
-Add all required environment variables:
-
-VITE_SUPABASE_URL
-
-VITE_SUPABASE_PUBLISHABLE_KEY
-
-SUPABASE_SERVICE_ROLE_KEY
-
-GEMINI_API_KEY
-
-(any others used by your project)
-
-Build command:
+1. Go to https://vercel.com  
+2. Import this repository  
+3. Add all required environment variables from `.env.local` in the Vercel dashboard  
+4. Set **Build Command**:
 
 npm run build
 
+text
 
-Output directory:
+5. Set **Output Directory**:
 
 dist
 
+text
 
-Deploy
+6. Deploy the project. [web:58][web:59]
 
-🔑 Environment Variables
+---
 
-Create a .env.local file in the project root:
+## 📁 Core Features
 
-VITE_SUPABASE_URL="https://your-project.supabase.co"
-VITE_SUPABASE_PUBLISHABLE_KEY="your_anon_key"
-SUPABASE_SERVICE_ROLE_KEY="your_service_role_key"
-GEMINI_API_KEY="your_gemini_key"
+- Mood tracking  
+- Journaling  
+- AI-generated mood suggestions  
+- Supabase authentication  
+- Mood history  
+- Edge Function–based AI processing  
+- Responsive UI for mobile and desktop [web:30][web:59]
 
+---
 
-⚠️ Never commit .env.local to GitHub.
+## 🧩 Editing the Project
 
-📂 Editing the Project
+### Using VS Code / Local Git
 
-You can modify the app in any of the following ways:
+git add .
+git commit -m "your message"
+git push
 
-✔ Using VS Code (recommended)
+text
 
-Clone the repo
+### Using GitHub Web
 
-Edit files
+- Open any file  
+- Click the ✏️ **Edit** icon  
+- Commit your changes to the desired branch
 
-Commit & push changes
+### Using GitHub Codespaces
 
-Vercel auto-deploys (if connected)
+- Open the repo on GitHub  
+- Click **Code → Codespaces → Create**  
+- Edit, run, and debug directly in the browser
 
-✔ Editing directly on GitHub
+---
 
-Open any file
+## 📂 Folder Structure (Simplified)
 
-Click the ✏️ "Edit" icon
+Mind-Mend-App/
+│
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── hooks/
+│ ├── lib/
+│ └── styles/
+│
+├── supabase/
+│ ├── migrations/
+│ └── functions/
+│
+├── public/
+├── package.json
+├── vite.config.ts
+└── README.md
 
-Commit changes directly in the browser
+text
 
-✔ GitHub Codespaces
+---
 
-If you want to use a cloud-based VS Code environment:
+## 📝 License
 
-Open the repo on GitHub
-
-Click Code → Codespaces → Create New Codespace
-
-Edit and commit normally
-
-📡 Backend (Supabase)
-
-This project uses:
-
-Supabase Auth
-
-Supabase Database (Postgres)
-
-Supabase Edge Functions (TypeScript)
-
-Make sure your tables, SQL schema, and edge functions are deployed correctly.
-
-📝 License
-
-This project is owned by Harsha-v-r.
-Feel free to fork, improve, or contribute if allowed.
+This project is owned by **Harsha-v-r**.  
+Please refer to the repository for licensing details or contact the owner for permissions. [web:51]
