@@ -1,118 +1,163 @@
-Mind Mend App
+# 🧠 Mind Mend – AI Mental Wellness Companion
 
-A modern mental wellness companion built using React, TypeScript, Vite, Tailwind, shadcn-ui, Supabase, and AI-powered mood analysis.
+A full-stack mental wellness application that helps users **track moods**, **journal thoughts**, and receive **AI-powered emotional support**.  
+Built with modern technologies like **React, Supabase, Tailwind, shadcn-ui**, and **Gemini AI**, the app provides personalized insights and a smooth user experience.
 
-🚀 Features
+---
 
-Mood tracking
+## 🚀 Project Purpose
 
-Journaling system
+Mind Mend is designed to support mental well-being by:
 
-AI-generated suggestions (Gemini-based)
+- Helping users **capture daily moods and thoughts**
+- Providing **AI-generated suggestions** for emotional balance
+- Allowing users to view their **mood history** & patterns
+- Acting as a friendly, always-available personal companion
 
-Supabase Authentication
+---
 
-Supabase Database + Edge Functions
+## 🌐 Live Demo
 
-Clean UI with Tailwind + shadcn-ui
+https://mindmend.ai.vercel.app
 
-Fully responsive
+---
 
-🛠 Tech Stack
+## 🧱 Tech Stack
 
-Frontend: React, TypeScript, Vite
+### 🖥️ Frontend
+- **React.js**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **shadcn-ui**
 
-Styling: Tailwind CSS, shadcn-ui
+### 🧠 Backend / Cloud
+- **Supabase** (Auth + Database + Edge Functions)
+- **PostgreSQL** (Supabase managed)
 
-Backend: Supabase (Auth, Postgres, Edge Functions)
+### 🤖 AI Integration
+- **Gemini API** (via custom Supabase Edge Functions)
 
-AI: Gemini API (custom Edge functions)
+---
 
-📦 Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/Harsha-v-r/Mind-Mend-App.git
+## 📑 Features
 
-2️⃣ Navigate into the project folder
-cd Mind-Mend-App
+### 👤 User Features
+- Create account & login securely  
+- Log daily mood with intensity  
+- Write journal entries  
+- Receive **AI suggestions** based on mood  
+- View past moods & insights  
+- Clean, responsive UI  
 
-3️⃣ Install dependencies
-npm install
+### 🛠️ System Features
+- Supabase **authentication**
+- Row-level data access per user
+- AI processing through secure **Edge Functions**
+- Real-time database interactions
+- Fully mobile-responsive design
 
-4️⃣ Start development server
-npm run dev
+---
 
-🔑 Environment Variables
+## 🖼️ Pages Overview
 
-Create a file named .env.local in the project root:
+| Page            | Description |
+|-----------------|-------------|
+| `/` (Home)      | App intro & feature overview |
+| `/login`        | User login |
+| `/register`     | User signup |
+| `/mood`         | Add today’s mood |
+| `/journal`      | Write your journal entry |
+| `/history`      | View past mood logs |
+| `/profile`      | User account info |
 
-VITE_SUPABASE_URL=""
-VITE_SUPABASE_PUBLISHABLE_KEY=""
-SUPABASE_SERVICE_ROLE_KEY=""
-GEMINI_API_KEY=""
+---
 
+## 🤖 AI Flow (Edge Functions)
 
-⚠️ Do NOT commit .env.local to GitHub.
+Mind Mend uses **Supabase Edge Functions** to connect safely to Gemini:
 
-🌐 Deployment (Vercel)
+- User submits mood + journal  
+- Edge function validates user  
+- Sends prompt → Gemini  
+- Saves suggestion into DB  
+- Returns a personalized emotional support message  
 
-Go to https://vercel.com
+This ensures:
+- No API keys exposed
+- Secure server-side AI processing
+- User-specific insights saved safely
 
-Import this repository
+---
 
-Add all environment variables from .env.local
+## 🗂️ Folder Structure (Simplified)
 
-Build command:
-
-npm run build
-
-
-Output directory:
-
-dist
-
-
-Deploy 🚀
-
-📁 Project Structure
 Mind-Mend-App/
 │
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   ├── lib/
-│   └── styles/
+│ ├── components/
+│ ├── pages/
+│ ├── hooks/
+│ ├── lib/
+│ └── styles/
 │
 ├── supabase/
-│   ├── migrations/
-│   └── functions/
+│ ├── migrations/ # Database schema
+│ └── functions/ # AI Edge Functions
 │
 ├── public/
 ├── package.json
+├── vite.config.ts
 └── README.md
 
-🧑‍💻 Contributing
 
-Fork the repo
+---
 
-Create a new branch:
+## ⚙️ Installation & Setup
 
-git checkout -b my-feature
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Harsha-v-r/Mind-Mend-App.git
+cd Mind-Mend-App
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Create .env.local
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+GEMINI_API_KEY=your_gemini_key
 
 
-Commit changes:
+⚠️ Do NOT commit .env.local
 
-git commit -m "Add new feature"
-
-
-Push:
-
-git push origin my-feature
+4️⃣ Run Locally
+npm run dev
 
 
-Create a Pull Request
+Open:
+http://localhost:5173
 
-📜 License
+🧪 Future Enhancements
 
-This project is maintained and owned by Harsha-v-r.
-Feel free to fork or contribute if allowed.
+✅ Mood analytics dashboard (graphs & trends)
+✅ Voice-based journaling
+✅ Dark mode
+✅ Chat-style emotional support
+✅ App reminders & streak tracking
+✅ Socially-anonymous community support (optional)
+
+🤝 Contributing
+
+Currently a solo project.
+Contributions will be welcomed soon — feel free to fork and raise PRs for improvements!
+
+📝 License
+
+MIT License
+
+📞 Contact
+
+For collaboration or queries:
+Email: 227r1a6222@gmail.com
